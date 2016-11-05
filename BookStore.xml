@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookstore>
+	<book category="computers-technology">
+		<title lang="en">Lua 5.2 Reference Manual</title>
+		<author> Roberto Ierusalimschy, Luiz Henrique de Figueiredo, Waldemar Celes </author>
+		<publisher> Samurai Media Limited </publisher>
+		<publish_date> 04-11-2015</publish_date>
+		<type> Paperback </type>
+		<language> English </language>
+		<price>19.99</price>
+	</book>
+	<book category="fiction">
+		<title lang="en">A Dance With Dragons: Part 1 Dreams and Dust (A Song of Ice and Fire, Book 5)</title>
+		<author> George R.R. Martin </author>
+		<publisher> Harper Voyager </publisher>
+		<publish_date> 15-03-2012</publish_date>
+		<type> Paperback </type>
+		<language> English </language>
+		<price> 7.49 </price>
+	</book>
+	<book category="computers-technology">
+		<title lang="en">Raspberry Pi 3: A Simple Guide to Help You Get the Most Out of Your Raspberry Pi 3 
+		(Raspberry Pi, Python, Raspberry Pi 2, Perl, Programming, Raspberry Pi 3, Ruby)</title>
+		<author> John Lynx </author>
+		<publisher> Amazon Digital Services LLC </publisher>
+		<publish_date> 28-05-2016 </publish_date>
+		<type> Kindle </type>
+		<language> English </language>
+		<filesize> 2012 KB </filesize>
+		<price> 2.99 </price>
+	</book>
+	<book category="travel">
+		<title lang="en"> National Geographic Traveler: Japan, 4th Edition </title>
+		<author> Nicholas Bornoff, Perrin Lindelauf, Ken Shimizu </author>
+		<publisher> National Geographic </publisher>
+		<publish_date> 03-09-2013 </publish_date>
+		<type> Paperback </type>
+		<language> English </language>
+		<price> 18.63 </price>
+	</book>
+	<book category="computers-technology">
+		<title lang="en">Social Media: How to Grow Your Business Rapidly Using These Simple Social Marketing Tips! (Business, Facebook, Twitter, Instagram, Social Media, Growing Business, Successful Business)</title>
+		<author> Gina Powell </author>
+		<publisher> Amazon Digital Services LLC </publisher>
+		<publish_date> 18-07-2016 </publish_date>
+		<type> Kindle </type>
+		<language> English </language>
+		<filesize> 1461 KB </filesize>
+		<price> 2.86 </price>
+	</book>
+	<book category="fiction">
+		<title lang="en"> Take Me With You</title>
+		<author> Catherine Ryan Hyde </author>
+		<publisher> Lake Union Publishing </publisher>
+		<publish_date> 22-07-2014 </publish_date>
+		<type> Paperback </type>
+		<language> English </language>
+		<price> 6.99 </price>
+	</book>
+	<book category="cookbooks">
+		<title lang="en"> Project Smoke</title>
+		<author> Steven Raichlen </author>
+		<publisher> Workman Publishing </publisher>
+		<publish_date> 10-05-2016 </publish_date>
+		<type> Paperback </type>
+		<language> English </language>
+		<price> 13.86 </price>
+	</book>
+	<book category="romance">
+		<title lang="en">Wild Man's Curse (Wilds of the Bayou) </title>
+		<author> Susannah Sandlin </author>
+		<publisher> Montlake Romance </publisher>
+		<publish_date> 05-04-2016 </publish_date>
+		<type> Paperback </type>
+		<language> English </language>
+		<price> 6.99 </price>
+	</book>
+	<book category="fiction">
+		<title lang="en">Harry Potter and the Cursed Child, Parts 1-2, Special Rehearsal Edition Script</title>
+		<author> J.K. Rowling </author>
+		<publisher> Arthur A. Levine Books; Special Rehearsal ed. edition </publisher>
+		<publish_date> 31-07-2016 </publish_date>
+		<type> Hardcover </type>
+		<language> English </language>
+		<price> 17.98 </price>
+	</book>
+	<book category="psychology">
+		<title lang="en">Handbook of Color Psychology (Cambridge Handbooks in Psychology)</title>
+		<author> Andrew J. Elliot, Mark D. Fairchild, Anna Franklin </author>
+		<publisher> Cambridge University Press; 1 edition </publisher>
+		<publish_date> 09-03-2016 </publish_date>
+		<type> Hardcover </type>
+		<language> English </language>
+		<price> 194.00 </price>
+	</book>
+
+	<book category="Science Fiction and Fantasy">
+		<title lang="en">Nemesis Games</title>
+		<author>James S. A. Corey</author>
+		<publisher>Orbit</publisher>
+		<publish_date>10-05-2016</publish_date>
+		<type>Paperback</type>
+		<language>English</language>
+		<price>7.47</price>
+	</book>
+
+	<book category="Science Fiction and Fantasy">
+		<title lang="en">Hunter</title>
+		<author>Mercedes Lackey</author>
+		<publisher>Disney Hyperion</publisher>
+		<publish_date>01-09-2015</publish_date>
+		<type>Kindle</type>
+		<language>English</language>
+    	<filesize> 2560 KB </filesize>
+		<price>7.99</price>
+	</book>
+
+	<book category="Travel">
+		<title lang="en">Lonely Planet Alaska</title>
+		<author>Lonely Planet,Brendan Sainsbury,Greg Benchwick,Catherine Bodry</author>
+		<publisher>Lonely Plane</publisher>
+		<publish_date>01-05-2015</publish_date>
+		<type>Paperback</type>
+		<language>English</language>
+		<price>16.99</price>
+	</book>
+
+	<book category="Travel">
+		<title lang="en">Lonely Planet Eastern USA</title>
+		<author>Lonely Planet,Karla Zimmerman,Amy C Balfour,Adam Karlin,Zora O'Neill,Kevin Raub,Regis St Louis,Mara Vorhees</author>
+		<publisher>Lonely Planet</publisher>
+		<publish_date>19-04-2016</publish_date>
+		<type>Paperback</type>
+		<language>English</language>
+		<price>17.04</price>
+	</book>
+
+	<book category="cookbook">
+		<title lang="en">Vietnamese Home Cooking</title>
+		<author>Charles Phan</author>
+		<publisher>Ten Speed Press</publisher>
+		<publish_date>25-09-2012</publish_date>
+		<type>Hardcover</type>
+		<language>English</language>
+		<price>23.33</price>
+	</book>
+
+	<book category="cookbook">
+		<title lang="en">Japanese Cooking: A Simple Art</title>
+		<author>Shizuo Tsuji</author>
+		<publisher>Kodansha USA</publisher>
+		<publish_date>17-02-2012</publish_date>
+		<type>Hardcover</type>
+		<language>English</language>
+		<price>33.49</price>
+	</book>
+
+	<book category="History">
+		<title lang="en">SPQR: A History of Ancient Rome</title>
+		<author>Mary Beard</author>
+		<publisher>Liveright</publisher>
+		<publish_date>09-11-2015</publish_date>
+		<type>Hardcover</type>
+		<language>English</language>
+		<price>14.35</price>
+	</book>
+
+	<book category="History">
+		<title lang="en">The Cold War: A New History</title>
+		<author>John Lewis Gaddis </author>
+		<publisher>Penguin Books</publisher>
+		<publish_date>26-12-2006</publish_date>
+		<type>Paperback</type>
+		<language>English</language>
+		<price>12.49</price>
+	</book>
+
+	<book category="Education and Teaching">
+		<title lang="en">Python Crash Course: A Hands-On, Project-Based Introduction to Programming</title>
+		<author>Matthes</author>
+		<publisher>No Starch Press</publisher>
+		<publish_date>30-11-2015</publish_date>
+		<type>Paperback</type>
+		<language>English</language>
+		<price>25.50</price>
+	</book>
+
+	<book category="Education and Teaching">
+		<title lang="en">The Book of R: A First Course in Programming and Statistics</title>
+		<author>Davies</author>
+		<publisher>No Starch Press</publisher>
+		<publish_date>23-07-2016</publish_date>
+		<type>Paperback</type>
+		<language>English</language>
+		<price>28.54</price>
+	</book>
+	<book category="manga">
+		<title lang="en">One Punch Man (Book 1)</title>
+		<author>ONE</author>
+		<publisher>VIZ Media LLC</publisher>
+		<publish_date> September 1, 2015</publish_date>  
+		<type> Paperback </type>
+		<language> English </language>
+		<price>7.66</price>
+		</book>
+	<book category="manga">
+	<title lang="en">Tokyo Ghoul (Book 1)</title>
+		<author>Sui Ishida </author>
+		<publisher>VIZ Media LLC</publisher>
+		<publish_date> June 16, 2015</publish_date>  
+		<type> Paperback </type>
+		<language> English </language>
+		<price>9.59</price>
+		</book>
+	<book category="manga">
+	<title lang="en">Assassination Classroom, Vol. 1</title>
+		<author>Yusei Matsui </author>
+		<publisher>VIZ Media LLC</publisher>
+		<publish_date>December 2, 2014</publish_date>  
+		<type>Paperback</type>
+		<language>English</language>
+		<price>8.68</price>
+	</book>
+	<book category="manga">
+		<title lang="en">Is It Wrong to Try to Pick Up Girls in a Dungeon?, Vol. 1</title>
+		<author>Fujino Omori</author>
+		<publisher>Yen Press</publisher>
+		<publish_date>May 19, 2015</publish_date>  
+		<type>Paperback</type>
+		<language>English</language>
+		<price>9.98</price>
+	</book>
+	<book category="manga">
+		<title lang="en">My Hero Academia, Vol. 1</title>
+		<author>Kohei Horikoshi </author>
+		<publisher>VIZ Media LLC</publisher>
+		<publish_date>August 4, 2015</publish_date>  
+		<type>Paperback</type>
+		<language>English</language>
+		<price>8.68</price>
+	</book>
+	<book category="manga">
+		<title lang="en">Attack on Titan 1</title>
+		<author> Hajime Isayama</author>
+		<publisher>Kodansha Comics</publisher>
+		<publish_date>June 19, 2012</publish_date>  
+		<type>Paperback</type>
+		<language>English</language>
+		<price>7.18</price>
+	</book>
+	<book category="manga">
+		<title lang="en">All You Need is Kill (manga): 2-in-1 Edition</title>
+		<author> Ryosuke Takeuchi </author>
+		<publisher>VIZ Media LLC</publisher>
+		<publish_date>November 4, 2014</publish_date>  
+		<type>Paperback</type>
+		<language>English</language>
+		<price>12.01</price>
+	</book>
+	<book category="manga">
+		<title lang="en">Nichijou, 1</title>
+		<author> Keiichi Arawi </author>
+		<publisher>Vertical Comics</publisher>
+		<publish_date>March 29, 2016</publish_date>  
+		<type>Paperback</type>
+		<language>English</language>
+		<price>8.26</price>
+	</book>
+	<book category="manga">
+		<title lang="en">Deadman Wonderland, Vol. 1</title>
+		<author> Jinsei Kataoka </author>
+		<publisher> VIZ Media LLC</publisher>
+		<publish_date>February 11, 2014</publish_date>  
+		<type>Paperback</type>
+		<language>English</language>
+		<price>8.87</price>
+	</book>
+	<book category="manga">
+		<title lang="en">Another</title>
+		<author> Yukito Ayatsuji </author>
+		<publisher>Yen Press</publisher>
+		<publish_date>October 29, 2013</publish_date>  
+		<type>Paperback</type>
+		<language>English</language>
+		<price>21.90</price>
+	</book>
+	<book category="Cookbooks">
+		<title lang="en">Franklin Barbecue: A Meat-Smoking Manifesto</title>
+		<author>Aaron Franklin , Jordan Mackay</author>
+		<publisher>Copylighted Material</publisher>
+		<publish_date>07-04-2015</publish_date>
+		<type>Hardcover</type>
+		<language>English</language>
+		<price>29.99</price>
+	</book>
+	<book category="Science Fiction and Fantasy">
+		<title lang="en">The Dragon Lords: Fool's Gold</title>
+		<author>Jon Hollins</author>
+		<publisher>Amazon Digital Services LLC</publisher>
+		<publish_date>19-07-2016</publish_date>
+		<type>Paperback</type>
+		<language>English</language>
+		<price>9.45</price>
+	</book>
+	<book category="Science Fiction and Fantasy">
+		<title lang="en">The Hobbit and the Lord of the Rings</title>
+		<author>J.R.R. Tolkien</author>
+		<publisher>HarperCollinsPublisher</publisher>
+		<publish_date>25-09-2012</publish_date>
+		<type>Mass Market Paperback</type>
+		<language>English</language>
+		<price>35.96</price>
+	</book>
+	<book category="Business and Money">
+		<title lang="en">Get It Together: Organize Your Records So Your Family Won't Have To</title>
+		<author>Melanie Cullen , Shae Irving J.D.</author>
+		<publisher>Nolo law for all</publisher>
+		<publish_date>10-04-2016</publish_date>
+		<type>Paperback</type>
+		<language>English</language>
+		<price>24.99</price>
+	</book>
+	<book category="Teen and Young Adult">
+		<title lang="en">Dan and Phil Go Outside</title>
+		<author>Dan Howell , Phil Lester</author>
+		<publisher>-</publisher>
+		<publish_date>09-11-2016</publish_date>
+		<type>Hardcover</type>
+		<language>English</language>
+		<price>14.99</price>
+	</book>
+	<book category="Sports and Outdoors">
+		<title lang="en">Unbroken (The Young Adult Adaptation): An Olympian's Journey from Airman to Castaway to Captive</title>
+		<author>Laura Hillenbrand</author>
+		<publisher>Jacket Photograph</publisher>
+		<publish_date>11-11-2014</publish_date>
+		<type>Hardcover</type>
+		<language>English</language>
+		<price>19.99</price>
+	</book>
+	<book category="Christian Books and Bibles">
+		<title lang="en">Youcat</title>
+		<author> Cardinal Christoph Schonborn</author>
+		<publisher>-</publisher>
+		<publish_date>01-04-2011</publish_date>
+		<type>Paperback</type>
+		<language>English</language>
+		<price>19.95</price>
+	</book>
+	<book category="Literature and Fiction">
+		<title lang="en">The Nest</title>
+		<author>Cynthia D'Aprix Sweeney</author>
+		<publisher>HarperCollinsPublisher</publisher>
+		<publish_date>22-03-2016</publish_date>
+		<type>Hardcover</type>
+		<language>English</language>
+		<price>16.19</price>
+	</book>
+	<book category="Crafts, Hobbies and Home">
+		<title lang="en">The Handbuilt Home: 34 Simple Stylish and Budget-Friendly Woodworking Projects for Every Room</title>
+		<author>Ana White</author>
+		<publisher>the crown</publisher>
+		<publish_date>09-10-2012</publish_date>
+		<type>Paperback</type>
+		<language>English</language>
+		<price>22.99</price>
+	</book>
+	<book category="Home Improvement and Design">
+		<title lang="en">Mini Farming: Self-Sufficiency on 1/4 Acre</title>
+		<author>Brett L. Markham</author>
+		<publisher>-</publisher>
+		<publish_date>-</publish_date>
+		<type>Kindle</type>
+		<language>English</language>
+    <filesize> 1435 KB </filesize>
+		<price>18.95</price>
+	</book>
+	<book category="sport">
+		<title lang="en">Stephen Curry: The Inspiring Story of One of Basketball's Sharpest Shooters</title>
+		<author> Clayton Geoffreys</author>
+		<publisher>Dino Books</publisher>
+		<publish_date>10-04-2014</publish_date>
+		<type> Paperback </type>
+		<language> English </language>
+		<price>9.64</price>
+	</book>
+	<book category="sport">
+		<title lang="en">The Flea - The Amazing Story of Leo Messi</title>
+		<author> Michael Part</author>
+		<publisher>DINO</publisher>
+		<publish_date>01-08-2013</publish_date>
+		<type> Paperback </type>
+		<language> English </language>
+		<price>7.06</price>
+	</book>
+	<book category="sport">
+		<title lang="en">Shoe Dog: A Memoir by the Creator of Nike</title>
+		<author>Phil Knight </author>
+		<publisher> Simon and Schuster Audio </publisher>
+		<publish_date>26-04-2016</publish_date>
+		<type>Paperback</type>
+		<language>English</language>
+		<price>9.15</price>
+	</book>
+	<book category="sport">
+		<title lang="en">Strength Training Anatomy</title>
+		<author> Frederic Delavier </author>
+		<publisher>boole de medecine</publisher>
+		<publish_date>09-03-2010</publish_date>
+		<type>Paperback</type>
+		<language>English</language>
+		<price>11.19</price>
+	</book>
+	<book category="sport">
+		<title lang="en"> The Yoga Bible</title>
+		<author>Christina Brown </author>
+		<publisher>Godsfield Press</publisher>
+		<publish_date>29-05-2003</publish_date>
+		<type>Paperback</type>
+		<language>English</language>
+		<price>12.42</price>
+	</book>
+	<book category="sport">
+		<title lang="en"> Soccer IQ: Things That Smart Players Do</title>
+		<author> Dan Blank</author>
+		<publisher>Dan Blank</publisher>
+		<publish_date>05-06-2012</publish_date>
+		<type>Paperback</type>
+		<language>English</language>
+		<price>9.99</price>
+	</book>
+	<book category="sport">
+		<title lang="en"> Principles of Athletic Training: A Competency-Based Approach</title>
+		<author> William Prentice </author>
+		<publisher>McGraw-Hill</publisher>
+		<publish_date>22-01-2013</publish_date>
+		<type>Paperback</type>
+		<language>English</language>
+		<price>38.22</price>
+	</book>
+	<book category="sport">
+		<title lang="en">The Inner Game of Tennis: The Classic Guide to the Mental Side of Peak Performance</title>
+		<author> W. Timothy Gallwey</author>
+		<publisher>Random house trade paperbacks</publisher>
+		<publish_date>27-05-1997</publish_date>
+		<type>Paperback</type>
+		<language>English</language>
+		<price>12.95</price>
+	</book>
+	<book category="sport">
+		<title lang="en"> Open Andre Agassi</title>
+		<author> Andre Agassi </author>
+		<publisher>Vintage Books</publisher>
+		<publish_date>10-08-2010</publish_date>
+		<type>Paperback</type>
+		<language>English</language>
+		<price>11.80</price>
+	</book>
+	<book category="sport">
+		<title lang="en">I Think Therefore I Play Andrea Pirlo </title>
+		<author> Andrea Pirlo and Alessandro Alciato</author>
+		<publisher>Laura Kincaid</publisher>
+		<publish_date>01-10-2015</publish_date>
+		<type>Paperback</type>
+		<language>English</language>
+		<price>12.86</price>
+	</book>
+
+	<book category="computers-programming">
+		<title lang="en">Professional ASP.NET 2.0 AJAX		</title>
+		<author>Dan Wahlin,Matt Gibbs	</author>  
+		<publisher>Wiley Publishing, Inc.</publisher>
+		<publish_date>01-01-2007</publish_date>
+    <type>bond paper</type>
+		<language>English</language>
+		<price>39.48</price>
+	</book>
+	<book category="computers-programming">
+		<title lang="en">Head First SQL : A Brain-Friendly Guide</title>
+		<author>Lynn Beighley</author>  
+		<publisher>O'Reilly Media, Inc.</publisher>
+		<publish_date>01-02-2007</publish_date>
+    <type>bond paper</type>
+		<language>English</language>
+		<price>55.52</price>
+	</book>
+	<book category="computers-programming">
+		<title lang="en">Java 5 Objects First</title>
+		<author>Barry I.Soroka</author>  
+		<publisher>Jones and Bartlett Publishers, LLC.</publisher>
+		<publish_date>01-01-2006	</publish_date>
+    <type>bond paper</type>
+		<language>English</language>
+		<price>30.02</price>
+	</book>
+	<book category="computers-programming">
+		<title lang="en">Simply Visual Basic. Net An Application-Driven Tutorial Approach +CD</title>	
+		<author>H.M. Deitel,P.J. Deitel,T.R. Nieto</author>  
+		<publisher>Prentice Hall Ptr</publisher>
+		<publish_date>10-06-2003</publish_date>	
+    <type>bond paper</type>
+		<language>English</language>
+		<price>23.30</price>
+	</book>
+	<book category="computers-programming">
+		<title lang="en">Open-Source Robotics and Process Control Cookbook: Designing and Building Robust, Dependable Real-Time Systems+CD</title>
+		<author>Lewin A.R.W. Edwards</author>  
+		<publisher>E.Q. Plus, สนพ.</publisher>
+		<publish_date>15-11-2005</publish_date>
+    <type>bond paper</type>
+		<language>English</language>
+		<price>47.57</price>
+	</book>
+	<book category="computers-programming">
+		<title lang="en">Beginning HTML, XHTML, CSS, and JavaScript</title>
+		<author>Jon Duckett</author>  
+		<publisher>Wiley Publishing, Inc.</publisher>
+		<publish_date>18-12-2010</publish_date>
+    <type>bond paper</type>
+		<language>English</language>
+		<price>28.65</price>
+	</book>
+	<book category="computers-programming">
+		<title lang="en">Learning JQuery 3ED</title>
+		<author>Jonathan Chaffer</author>  
+		<publisher>Packt Publishing</publisher>
+		<publish_date>25-11-2011</publish_date>
+    <type>bond paper</type>
+		<language>English</language>
+		<price>64.16</price>
+	</book>
+	<book category="computers-hardware">
+		<title lang="en">Computer Organization and Architecture : Designing for Performance 9ED +Online Access</title>
+		<author>William Stallings</author>  
+		<publisher>Pearson Education Limited</publisher>
+		<publish_date>14-07-2013</publish_date>
+    <type>art paper</type>
+		<language>English</language>
+		<price>29.88</price>
+	</book>
+	<book category="computers-internet">
+		<title lang="en">The Architecture of Computer Hardware, System Software, and Networking: An Information Technology Approach 4ED	</title>
+		<author>Irv Englander</author>  
+		<publisher>John Wiley and Sons (Asia) Pte Ltd</publisher>
+		<publish_date>22-03-2010</publish_date>
+    <type>bond paper</type>
+		<language>English</language>
+		<price>27.97</price>
+	</book>
+	<book category="computers-entertainment">
+		<title lang="en">Media Studies : An Introduction</title>
+		<author>Robert Kolker</author>  
+		<publisher>Wiley-Blackwell</publisher>
+		<publish_date>30-10-2010</publish_date>
+    <type>bond paper</type>
+		<language>English</language>
+		<price>46.47</price>
+	</book>
+<book category="new"><title lang="en">AAAAAA</title><author>sasads</author><publisher>sad</publisher><publish_date>12-12-2559</publish_date><type>Kindle</type><language>thai</language><price>20</price></book></bookstore>

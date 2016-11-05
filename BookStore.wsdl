@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<definitions xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://localhost/Webservice/Server.php" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://localhost/Webservice/Server.php">
+<types>
+<xsd:schema targetNamespace="http://localhost/Webservice/Server.php">
+<xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+<xsd:import namespace="http://schemas.xmlsoap.org/wsdl/"/>
+</xsd:schema>
+</types>
+<message name="movies.getPriceRequest">
+<part name="type" type="xsd:string"/>
+</message>
+<message name="movies.getPriceResponse">
+<part name="return" type="xsd:string"/>
+</message>
+<portType name="BookStoreServicePortType">
+<operation name="movies.getPrice">
+<documentation>Get food by type</documentation>
+<input message="tns:movies.getPriceRequest"/>
+<output message="tns:movies.getPriceResponse"/>
+</operation>
+</portType>
+<binding name="BookStoreServiceBinding" type="tns:BookStoreServicePortType">
+<soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+<operation name="movies.getPrice">
+<soap:operation soapAction="http://localhost/Webservice/Server.php#getPrice" style="rpc"/>
+<input>
+<soap:body use="encoded" namespace="http://localhost/Webservice/Server.php" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+</input>
+<output>
+<soap:body use="encoded" namespace="http://localhost/Webservice/Server.php" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+</output>
+</operation>
+</binding>
+<service name="BookStoreService">
+<port name="BookStoreServicePort" binding="tns:BookStoreServiceBinding">
+<soap:address location="http://localhost/Webservice/Server.php"/>
+</port>
+</service>
+</definitions>
