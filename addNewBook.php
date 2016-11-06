@@ -20,6 +20,7 @@
   	if($_POST['submit_add'] == "Submit") {
         $client = new nusoap_client("http://localhost/Webservice/Server.php?wsdl",true); 
 		$add = array(
+            'catagoryVar' => $_POST['from_catagory'],
 			'titleVar'=>$_POST['from_title'],
 			'authorVar'=>$_POST['from_author'],
 			'publisherVar'=>$_POST['from_publisher'],
@@ -36,6 +37,9 @@
 	<ul class="form-style-1">
     <li><label>Title <span class="required">*</span></label>
     	<input type="text" name="from_title" class="field-divided" placeholder="Title" size="30" maxlength="60"/>
+    </li>
+    <li><label>Catagory <span class="required">*</span></label>
+        <input type="text" name="from_catagory" class="field-divided" placeholder="Catagory" size="30" maxlength="60"/>
     </li>
     <li>
         <label>Author <span class="required">*</span></label>

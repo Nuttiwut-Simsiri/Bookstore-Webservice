@@ -16,6 +16,7 @@ $server->register("findBook",
                 );
 $addVar = array(
             'titleVar'=>'xsd:string',
+            'catagoryVar' => 'xsd:string',
             'authorVar'=>'xsd:string',
             'publisherVar'=>'xsd:string',
             'publish_dateVar'=>'xsd:string',
@@ -23,6 +24,16 @@ $addVar = array(
             'languageVar'=>'xsd:string',
             'priceVar'=>'xsd:string'
             );
+$editVar = array(
+            'from_name'=>'xsd:string',
+            'to_name'=>'xsd:string'
+            );
+$T_editVar = array(
+            'id'=>'xsd:string',
+            'element'=>'xsd:string',
+            'new_value' =>'xsd:string'
+            );
+
 $server->register(
             'AddXML',
             $addVar,
@@ -34,15 +45,17 @@ $server->register(
             array('mark_name'=>'xsd:string'),
             array('return'=>'xsd:string')
             );
-$editVar = array(
-            'from_name'=>'xsd:string',
-            'to_name'=>'xsd:string'
-            );
 $server->register(
             'EditXML',
             $editVar,
             array('return'=>'xsd:string')
             );
+$server->register(
+            'T_EditXML',
+            $T_editVar,
+            array('return'=>'xsd:string')
+            );
+
 
 function findBook($keyword){
     $xml = simplexml_load_file('BookStore.xml');
@@ -52,30 +65,31 @@ function findBook($keyword){
         $title = (String) $book->title;
         $author = (String) $book->author;
         $price = (int) $book->price;
+        $type = (string) $book ->type;
         $oper = substr($keyword, 0,1);
         $KeyPrice = (int)substr($keyword, 1,strlen($keyword));
         if($oper == '>' || $oper == '<'){
             if($oper == '>'){
                 if($price >=  $KeyPrice){
-                    array_push($result,$book['category'],$book->title,$book->author,$book->publisher,$book->publish_date,$book->price);
+                    array_push($result,$book->title,$category,$book->author,$book->publisher,$book->publish_date,$type,$book->price);
                 }
             }elseif($oper == '<'){
                 if($price <=  $KeyPrice){
-                    array_push($result,$book['category'],$book->title,$book->author,$book->publisher,$book->publish_date,$book->price);
+                    array_push($result,$book->title,$category,$book->author,$book->publisher,$book->publish_date,$type,$book->price);
                 }
             }
         }elseif(strncasecmp($category ,$keyword , strlen($keyword)) == 0 || (strncasecmp($title ,$keyword , strlen($keyword)) == 0) || (strncasecmp($author ,$keyword , strlen($keyword)) == 0)){
-            array_push($result,$book['category'],$book->title,$book->author,$book->publisher,$book->publish_date,$book->price);
+            array_push($result,$book->title,$category,$book->author,$book->publisher,$book->publish_date,$type,$book->price);
         }
     }  
     return $result;
 }
 
-function AddXML($titleVar,$authorVar,$publisherVar,$publish_dateVar,$typeVar,$languageVar,$priceVar){
+function AddXML($titleVar,$catagoryVar,$authorVar,$publisherVar,$publish_dateVar,$typeVar,$languageVar,$priceVar){
     $file = 'BookStore.xml';
     $xml = simplexml_load_file($file);
     $book = $xml->addChild('book');
-    $book->addAttribute('category', 'new');
+    $book->addAttribute('category', $catagoryVar);
     $book->addChild('title', $titleVar);
     $book->title->addAttribute('lang', 'en');
     $book->addChild('author', $authorVar);
@@ -85,7 +99,7 @@ function AddXML($titleVar,$authorVar,$publisherVar,$publish_dateVar,$typeVar,$la
     $book->addChild('language',$languageVar);
     $book->addChild('price',$priceVar);         
     $xml->asXML($file); 
-    return "Add <b>$titleVar</b> Success!";
+    return "Add $titleVar Success!";
 }
 function DeleteXML($mark_name) {
     $name = $mark_name;         
@@ -102,7 +116,7 @@ function DeleteXML($mark_name) {
         }
     }           
     $output = $xml->asXML('BookStore.xml');     
-    return "Delete <b>$mark_name</b> Success!";
+    return "Delete $mark_name Success!";
 }    
 function EditXML($from_name, $to_name) {            
     $xmlStr = file_get_contents('BookStore.xml'); 
@@ -115,7 +129,26 @@ function EditXML($from_name, $to_name) {
             }
         }           
     $output = $xml->asXML('BookStore.xml');     
-    return "Edit Done !  <b>$from_name</b> (to) <b>$to_name</b>";
+    return "Edit Done !  $from_name (to) <b>$to_name</b>";
+}
+function T_EditXML($id, $element,$new_value) {            
+    $xmlStr = file_get_contents('BookStore.xml'); 
+    $xml = new SimpleXMLElement($xmlStr);
+    echo "DO";
+    foreach ($xml->book as $book) {
+        if((String) $book->title == $id){
+            echo "Found Book";
+            if($element == "author"){
+                echo "changed Author !";
+                $book->author = $new_value;
+            }elseif ($element == "publisher") {
+                $book->publisher = $new_value;
+            }
+        }
+    }
+    
+    $output = $xml->asXML('BookStore.xml');     
+    return "Edit $id Done";
 }
 $rawPostData = file_get_contents("php://input"); 
 $server->service($rawPostData);
