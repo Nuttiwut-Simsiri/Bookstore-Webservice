@@ -37,7 +37,9 @@
           var publisher = $('#from_publisher').text();
           var publish_date = $('#from_publish_date').text();  
           var type = $('#from_type').text(); 
-          var price = $('#from_price').text();   
+          var price = $('#from_price').text();
+          var height = $('#from_height').text();
+          var th_price = $('#from_th_price').text();   
           if(catagory == '') {  
                 alert("Enter Catagory !");  
                 return false;  
@@ -66,10 +68,18 @@
                 alert("Enter Price !");  
                 return false;  
           }
+          if(height == '') {  
+                alert("Enter height !");  
+                return false;  
+          }
+          if(th_price == '') {  
+                alert("Enter Th_Price !");  
+                return false;  
+          }
           $.ajax({  
                 url:"T_Add.php",  
                 method:"POST",  
-                data:{from_catagory:catagory ,from_title:title, from_author:author,from_publisher:publisher,from_publish_date:publish_date,from_type:type,from_price:price},  
+                data:{from_catagory:catagory ,from_title:title, from_author:author,from_publisher:publisher,from_publish_date:publish_date,from_type:type,from_price:price,from_height:height,from_th_price:th_price},  
                 dataType:"text",  
                 success:function(data)  
                 {  
@@ -91,7 +101,6 @@
                 success:function(data){ 
                     $('#table').html("");
                     $('#table').html(data);
-                    console.log(data);
                 }  
            });  
       });
@@ -152,6 +161,33 @@
            var publisherV = $(this).text();  
            edit_data(id,publisherV, "publisher");  
       });
+      $(document).on('blur', '.from_publish_date', function(){  
+           var id = $(this).data("id5");
+           var publish_date = $(this).text();  
+           edit_data(id,publish_dateV, "publish_date");  
+      });
+      $(document).on('blur', '.from_type', function(){  
+           var id = $(this).data("id6");
+           var data = $(this).text();  
+           edit_data(id,data, "type");  
+      });
+      $(document).on('blur', '.from_price', function(){  
+           var id = $(this).data("id7");
+           var data = $(this).text();  
+           edit_data(id,data, "price");  
+      });
+      $(document).on('blur', '.from_height', function(){  
+           var id = $(this).data("id8");
+           var data = $(this).text();  
+           edit_data(id,data, "height");  
+      });
+      $(document).on('blur', '.from_th_price', function(){  
+           var id = $(this).data("id9");
+           var data = $(this).text();  
+           edit_data(id,data, "th_price");  
+      });
+      
+      
                 
     });
 </script>

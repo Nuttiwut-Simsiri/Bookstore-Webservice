@@ -11,7 +11,9 @@
 		'publish_dateVar'=>$_POST['from_publish_date'],
 		'typeVar'=>$_POST['from_type'],
 		'languageVar'=>$_POST['from_language'],
-		'priceVar'=>$_POST['from_price']
+		'priceVar'=>$_POST['from_price'],
+		'heightVar'=>$_POST['from_height'],
+		'th_priceVar'=>$_POST['from_th_price']
 		);
     $data = $client->call("AddXML",$add);		
     echo $data;

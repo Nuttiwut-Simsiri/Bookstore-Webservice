@@ -17,9 +17,11 @@ echo  '<div align="center">
                         <th width="10%"> Catagory </th>
                         <th width="20%"> Author </th>
                         <th width="10%"> Publisher </th>
-                        <th width="10%"> Publish_date </th>
-                        <th width="7%"> Type </th>
+                        <th width="5%"> Publish_date </th>
+                        <th width="5%"> Type </th>
                         <th width="5%"> Price </th>
+                        <th width="2%"> height </th>
+                        <th width="5%"> Th_price </th>
                         <th width="3%"> Add / Remove </th>
                     </tr>
                     <tr>'."\n";
@@ -44,20 +46,28 @@ echo  '<div align="center">
           $index = $index+1;
           break;
         case 4:
-          echo '<td class="from_publish_date" contenteditable="true">'.$value .'</td>'."\n";
+          echo '<td class="from_publish_date" contenteditable="true" data-id5="'.$titleName.'">'.$value .'</td>'."\n";
           $index = $index+1;
           break; 
         case 5:
-          echo '<td class="from_type" contenteditable="true">'.$value .'</td>'."\n";
+          echo '<td class="from_type" contenteditable="true" data-id6="'.$titleName.'">'.$value .'</td>'."\n";
           $index = $index+1;
           break;
         case 6:
-          echo '<td class="from_price" contenteditable="true">'.'$'."$value </td>\n";
+          echo '<td class="from_price" contenteditable="true" data-id7="'.$titleName.'">'.'$'."$value </td>\n";
           $index = $index+1;
-          break;  
+          break; 
+        case 7:
+          echo '<td class="from_height" contenteditable="true" data-id8="'.$titleName.'">'."$value  inch </td>\n";
+          $index = $index+1;
+          break; 
+        case 8:
+          echo '<td class="from_th_price" contenteditable="true" data-id9="'.$titleName.'">'.'B '."$value </td>\n";
+          $index = $index+1;
+          break;   
         
       }
-      if(($key+1) %7 ==0 ){
+      if(($key+1) %9 ==0 ){
           $index = 0;
           echo '<td><button type="button" name="delete_btn" class="btn btn-xs btn-danger btn_delete" data-id7="'.$titleName.'"">x</button></td>';
           echo "</tr>\n";
@@ -72,6 +82,8 @@ echo  '<div align="center">
                     <td id="from_publish_date" contenteditable></td>  
                     <td id="from_type" contenteditable></td>
                     <td id="from_price" contenteditable></td>
+                    <td id="from_height" contenteditable></td>
+                    <td id="from_th_price" contenteditable></td>
                     <td><button type="button" name="btn_add" id="btn_add" class="btn btn-xs btn-success">+</button></td> 
                   </tr>
                   ';

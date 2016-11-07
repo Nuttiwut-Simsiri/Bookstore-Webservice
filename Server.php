@@ -22,13 +22,15 @@ $addVar = array(
             'publish_dateVar'=>'xsd:string',
             'typeVar'=>'xsd:string',
             'languageVar'=>'xsd:string',
-            'priceVar'=>'xsd:string'
+            'priceVar'=>'xsd:string',
+            'heightVar'=>'xsd:string',
+            'th_priceVar'=>'xsd:string'
             );
 $editVar = array(
             'from_name'=>'xsd:string',
             'to_name'=>'xsd:string'
             );
-$T_editVar = array(
+$T_EditVar = array(
             'id'=>'xsd:string',
             'element'=>'xsd:string',
             'new_value' =>'xsd:string'
@@ -52,7 +54,7 @@ $server->register(
             );
 $server->register(
             'T_EditXML',
-            $T_editVar,
+            $T_EditVar,
             array('return'=>'xsd:string')
             );
 
@@ -66,26 +68,43 @@ function findBook($keyword){
         $author = (String) $book->author;
         $price = (int) $book->price;
         $type = (string) $book ->type;
-        $oper = substr($keyword, 0,1);
+        $oper = substr($keyword, 0,2);
         $KeyPrice = (int)substr($keyword, 1,strlen($keyword));
-        if($oper == '>' || $oper == '<'){
-            if($oper == '>'){
-                if($price >=  $KeyPrice){
-                    array_push($result,$book->title,$category,$book->author,$book->publisher,$book->publish_date,$type,$book->price);
+        $KeythPrice = (int)substr($keyword, 2,strlen($keyword));
+        if($oper == '>B' || $oper == '<B' ||$oper == '>$' || $oper == '<$' ||$oper == '>h' || $oper == '<h' ){
+            if($oper == '>B' ){
+                if((int)$book->th_price >=  $KeythPrice ){
+                    array_push($result,$book->title,$category,$book->author,$book->publisher,$book->publish_date,$type,$book->price,$book->height,$book->th_price);
                 }
-            }elseif($oper == '<'){
-                if($price <=  $KeyPrice){
-                    array_push($result,$book->title,$category,$book->author,$book->publisher,$book->publish_date,$type,$book->price);
+            }elseif($oper == '<B'){
+                if((int)$book->th_price <=  $KeythPrice ){
+                    array_push($result,$book->title,$category,$book->author,$book->publisher,$book->publish_date,$type,$book->price,$book->height,$book->th_price);
+                }
+            }elseif($oper == '>$'){
+                if($price >=  $KeythPrice ){
+                    array_push($result,$book->title,$category,$book->author,$book->publisher,$book->publish_date,$type,$book->price,$book->height,$book->th_price);
+                }
+            }elseif($oper == '<$'){
+                if($price <=  $KeythPrice ){
+                    array_push($result,$book->title,$category,$book->author,$book->publisher,$book->publish_date,$type,$book->price,$book->height,$book->th_price);
+                }
+            }elseif($oper == '<h'){
+                if((int)$book->height <=  $KeythPrice ){
+                    array_push($result,$book->title,$category,$book->author,$book->publisher,$book->publish_date,$type,$book->price,$book->height,$book->th_price);
+                }
+            }elseif($oper == '>h'){
+                if((int)$book->height >=  $KeythPrice ){
+                    array_push($result,$book->title,$category,$book->author,$book->publisher,$book->publish_date,$type,$book->price,$book->height,$book->th_price);
                 }
             }
         }elseif(strncasecmp($category ,$keyword , strlen($keyword)) == 0 || (strncasecmp($title ,$keyword , strlen($keyword)) == 0) || (strncasecmp($author ,$keyword , strlen($keyword)) == 0)){
-            array_push($result,$book->title,$category,$book->author,$book->publisher,$book->publish_date,$type,$book->price);
+            array_push($result,$book->title,$category,$book->author,$book->publisher,$book->publish_date,$type,$book->price,$book->height,$book->th_price);
         }
     }  
     return $result;
 }
 
-function AddXML($titleVar,$catagoryVar,$authorVar,$publisherVar,$publish_dateVar,$typeVar,$languageVar,$priceVar){
+function AddXML($titleVar,$catagoryVar,$authorVar,$publisherVar,$publish_dateVar,$typeVar,$languageVar,$priceVar,$heightVar,$th_priceVar){
     $file = 'BookStore.xml';
     $xml = simplexml_load_file($file);
     $book = $xml->addChild('book');
@@ -97,7 +116,9 @@ function AddXML($titleVar,$catagoryVar,$authorVar,$publisherVar,$publish_dateVar
     $book->addChild('publish_date', $publish_dateVar);
     $book->addChild('type', $typeVar);
     $book->addChild('language',$languageVar);
-    $book->addChild('price',$priceVar);         
+    $book->addChild('price',$priceVar);
+    $book->addChild('height',$heightVar); 
+    $book->addChild('th_price',$th_priceVar);        
     $xml->asXML($file); 
     return "Add $titleVar Success!";
 }
@@ -129,26 +150,46 @@ function EditXML($from_name, $to_name) {
             }
         }           
     $output = $xml->asXML('BookStore.xml');     
-    return "Edit Done !  $from_name (to) <b>$to_name</b>";
+    return "Edit Done ! $from_name (to) $to_name";
 }
-function T_EditXML($id, $element,$new_value) {            
+function T_EditXML($id,$element,$new_value) {            
     $xmlStr = file_get_contents('BookStore.xml'); 
     $xml = new SimpleXMLElement($xmlStr);
-    echo "DO";
-    foreach ($xml->book as $book) {
-        if((String) $book->title == $id){
-            echo "Found Book";
-            if($element == "author"){
-                echo "changed Author !";
-                $book->author = $new_value;
-            }elseif ($element == "publisher") {
-                $book->publisher = $new_value;
+    $book = $xml->book;
+
+    for($j=0;$j<sizeof($book);$j++){
+        foreach ($book[$j] as $key => $value) {
+            if($id==$value and $key=="title")
+                switch ($element) {
+                    case 'catagory':
+                        $book[$j]['catagory'] = $new_value;
+                        break;
+                    case 'author':
+                        $book[$j]->author = $new_value;
+                        break;
+                    case 'publisher':
+                        $book[$j]->publisher = $new_value;
+                        break;
+                    case 'type':
+                        $book[$j]->type = $new_value;
+                        break;
+                    case 'publish_date':
+                        $book[$j]->publish_date = $new_value;
+                        break;
+                    case 'price':
+                        $book[$j]->price = $new_value;
+                        break;
+                    case 'height':
+                        $book[$j]->height = $new_value;
+                        break;
+                    case 'th_price':
+                        $book[$j]->th_price = $new_value;
+                        break;
+                }
             }
-        }
-    }
-    
+        }           
     $output = $xml->asXML('BookStore.xml');     
-    return "Edit $id Done";
+    return "Edit Done !";
 }
 $rawPostData = file_get_contents("php://input"); 
 $server->service($rawPostData);

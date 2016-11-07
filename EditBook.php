@@ -19,7 +19,7 @@
   	if($_POST['submit_edit'] == "Submit") {
 		$from_name=$_POST['from_name'];
 		$to_name=$_POST['to_name'];
-        $client = new nusoap_client("http://localhost/book/WebServiceServer.php?wsdl",true); 
+        $client = new nusoap_client("http://localhost/WebService/Server.php?wsdl",true); 
         $params = array(
 			'from_name'=>$from_name,
 			'to_name'=>$to_name

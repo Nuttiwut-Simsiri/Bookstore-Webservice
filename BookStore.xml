@@ -8,6 +8,8 @@
 		<type> Paperback </type>
 		<language> English </language>
 		<price>19.99</price>
+		<height> 0.1 </height>
+		<th_price> 700 </th_price>
 	</book>
 	<book category="fiction">
 		<title lang="en">A Dance With Dragons: Part 1 Dreams and Dust (A Song of Ice and Fire, Book 5)</title>
@@ -17,6 +19,8 @@
 		<type> Paperback </type>
 		<language> English </language>
 		<price> 7.49 </price>
+		<height> 5 </height>
+		<th_price> 1500 </th_price>
 	</book>
 	<book category="computers-technology">
 		<title lang="en">Raspberry Pi 3: A Simple Guide to Help You Get the Most Out of Your Raspberry Pi 3 
@@ -28,6 +32,8 @@
 		<language> English </language>
 		<filesize> 2012 KB </filesize>
 		<price> 2.99 </price>
+		<height> 1 </height>
+		<th_price> 500 </th_price>
 	</book>
 	<book category="travel">
 		<title lang="en"> National Geographic Traveler: Japan, 4th Edition </title>
@@ -37,6 +43,8 @@
 		<type> Paperback </type>
 		<language> English </language>
 		<price> 18.63 </price>
+		<height> 1 </height>
+		<th_price> 500 </th_price>
 	</book>
 	<book category="computers-technology">
 		<title lang="en">Social Media: How to Grow Your Business Rapidly Using These Simple Social Marketing Tips! (Business, Facebook, Twitter, Instagram, Social Media, Growing Business, Successful Business)</title>
@@ -47,6 +55,8 @@
 		<language> English </language>
 		<filesize> 1461 KB </filesize>
 		<price> 2.86 </price>
+		<height> 1 </height>
+		<th_price> 500 </th_price>
 	</book>
 	<book category="fiction">
 		<title lang="en"> Take Me With You</title>
@@ -56,6 +66,8 @@
 		<type> Paperback </type>
 		<language> English </language>
 		<price> 6.99 </price>
+		<height> 1 </height>
+		<th_price> 500 </th_price>
 	</book>
 	<book category="cookbooks">
 		<title lang="en"> Project Smoke</title>
@@ -65,6 +77,8 @@
 		<type> Paperback </type>
 		<language> English </language>
 		<price> 13.86 </price>
+		<height> 1 </height>
+		<th_price> 500 </th_price>
 	</book>
 	<book category="romance">
 		<title lang="en">Wild Man's Curse (Wilds of the Bayou) </title>
@@ -74,6 +88,8 @@
 		<type> Paperback </type>
 		<language> English </language>
 		<price> 6.99 </price>
+		<height> 1 </height>
+		<th_price> 500 </th_price>
 	</book>
 	<book category="fiction">
 		<title lang="en">Harry Potter and the Cursed Child, Parts 1-2, Special Rehearsal Edition Script</title>
@@ -83,6 +99,8 @@
 		<type> Hardcover </type>
 		<language> English </language>
 		<price> 17.98 </price>
+		<height> 1 </height>
+		<th_price> 500 </th_price>
 	</book>
 	<book category="psychology">
 		<title lang="en">Handbook of Color Psychology (Cambridge Handbooks in Psychology)</title>
@@ -92,6 +110,8 @@
 		<type> Hardcover </type>
 		<language> English </language>
 		<price> 194.00 </price>
+		<height> 1 </height>
+		<th_price> 500 </th_price>
 	</book>
 
 	<book category="Science Fiction and Fantasy">
@@ -102,7 +122,7 @@
 		<type>Paperback</type>
 		<language>English</language>
 		<price>7.47</price>
-	</book>
+	<th_price>100</th_price></book>
 
 	<book category="Science Fiction and Fantasy">
 		<title lang="en">Hunter</title>
@@ -113,6 +133,8 @@
 		<language>English</language>
     	<filesize> 2560 KB </filesize>
 		<price>7.99</price>
+		<height> 1 </height>
+		<th_price> 500 </th_price>
 	</book>
 
 	<book category="Travel">
@@ -123,6 +145,8 @@
 		<type>Paperback</type>
 		<language>English</language>
 		<price>16.99</price>
+		<height> 1 </height>
+		<th_price> 500 </th_price>
 	</book>
 
 	<book category="Travel">
@@ -133,6 +157,8 @@
 		<type>Paperback</type>
 		<language>English</language>
 		<price>17.04</price>
+		<height> 1 </height>
+		<th_price> 500 </th_price>
 	</book>
 
 	<book category="cookbook">
@@ -143,6 +169,8 @@
 		<type>Hardcover</type>
 		<language>English</language>
 		<price>23.33</price>
+		<height> 1 </height>
+		<th_price> 500 </th_price>
 	</book>
 
 	<book category="cookbook">
@@ -153,7 +181,7 @@
 		<type>Hardcover</type>
 		<language>English</language>
 		<price>33.49</price>
-	</book>
+	<th_price>100</th_price></book>
 
 	<book category="History">
 		<title lang="en">SPQR: A History of Ancient Rome</title>
@@ -163,6 +191,8 @@
 		<type>Hardcover</type>
 		<language>English</language>
 		<price>14.35</price>
+		<height> 1 </height>
+		<th_price> 500 </th_price>
 	</book>
 
 	<book category="History">
@@ -173,6 +203,8 @@
 		<type>Paperback</type>
 		<language>English</language>
 		<price>12.49</price>
+		<height> 1 </height>
+		<th_price> 500 </th_price>
 	</book>
 
 	<book category="Education and Teaching">
@@ -183,6 +215,8 @@
 		<type>Paperback</type>
 		<language>English</language>
 		<price>25.50</price>
+		<height> 1 </height>
+		<th_price> 500 </th_price>
 	</book>
 
 	<book category="Education and Teaching">
@@ -193,6 +227,8 @@
 		<type>Paperback</type>
 		<language>English</language>
 		<price>28.54</price>
+		<height> 1 </height>
+		<th_price> 500 </th_price>
 	</book>
 	<book category="manga">
 		<title lang="en">One Punch Man (Book 1)</title>
@@ -202,6 +238,8 @@
 		<type> Paperback </type>
 		<language> English </language>
 		<price>7.66</price>
+		<height> 1 </height>
+		<th_price> 500 </th_price>
 		</book>
 	<book category="manga">
 	<title lang="en">Tokyo Ghoul (Book 1)</title>
@@ -211,7 +249,9 @@
 		<type> Paperback </type>
 		<language> English </language>
 		<price>9.59</price>
-		</book>
+		<height> 1 </height>
+		<th_price> 500 </th_price>
+	</book>
 	<book category="manga">
 	<title lang="en">Assassination Classroom, Vol. 1</title>
 		<author>Yusei Matsui </author>
@@ -220,6 +260,8 @@
 		<type>Paperback</type>
 		<language>English</language>
 		<price>8.68</price>
+		<height> 0.5 </height>
+		<th_price> 300 </th_price>
 	</book>
 	<book category="manga">
 		<title lang="en">Is It Wrong to Try to Pick Up Girls in a Dungeon?, Vol. 1</title>
@@ -229,7 +271,7 @@
 		<type>Paperback</type>
 		<language>English</language>
 		<price>9.98</price>
-	</book>
+	<th_price>100</th_price></book>
 	<book category="manga">
 		<title lang="en">My Hero Academia, Vol. 1</title>
 		<author>Kohei Horikoshi </author>
@@ -247,6 +289,8 @@
 		<type>Paperback</type>
 		<language>English</language>
 		<price>7.18</price>
+		<height> 0.5 </height>
+		<th_price> 300 </th_price>
 	</book>
 	<book category="manga">
 		<title lang="en">All You Need is Kill (manga): 2-in-1 Edition</title>
@@ -256,6 +300,8 @@
 		<type>Paperback</type>
 		<language>English</language>
 		<price>12.01</price>
+		<height> 0.5 </height>
+		<th_price> 300 </th_price>
 	</book>
 	<book category="manga">
 		<title lang="en">Nichijou, 1</title>
@@ -265,6 +311,8 @@
 		<type>Paperback</type>
 		<language>English</language>
 		<price>8.26</price>
+		<height> 0.5 </height>
+		<th_price> 300 </th_price>
 	</book>
 	<book category="manga">
 		<title lang="en">Deadman Wonderland, Vol. 1</title>
@@ -274,6 +322,8 @@
 		<type>Paperback</type>
 		<language>English</language>
 		<price>8.87</price>
+		<height> 0.5 </height>
+		<th_price> 300 </th_price>
 	</book>
 	<book category="manga">
 		<title lang="en">Another</title>
@@ -283,6 +333,8 @@
 		<type>Paperback</type>
 		<language>English</language>
 		<price>21.90</price>
+		<height> 0.5 </height>
+		<th_price> 300 </th_price>
 	</book>
 	<book category="Cookbooks">
 		<title lang="en">Franklin Barbecue: A Meat-Smoking Manifesto</title>
@@ -292,6 +344,8 @@
 		<type>Hardcover</type>
 		<language>English</language>
 		<price>29.99</price>
+		<height> 0.5 </height>
+		<th_price> 300 </th_price>
 	</book>
 	<book category="Science Fiction and Fantasy">
 		<title lang="en">The Dragon Lords: Fool's Gold</title>
@@ -310,6 +364,8 @@
 		<type>Mass Market Paperback</type>
 		<language>English</language>
 		<price>35.96</price>
+		<height> 0.5 </height>
+		<th_price> 300 </th_price>
 	</book>
 	<book category="Business and Money">
 		<title lang="en">Get It Together: Organize Your Records So Your Family Won't Have To</title>
@@ -319,6 +375,8 @@
 		<type>Paperback</type>
 		<language>English</language>
 		<price>24.99</price>
+		<height> 0.5 </height>
+		<th_price> 300 </th_price>
 	</book>
 	<book category="Teen and Young Adult">
 		<title lang="en">Dan and Phil Go Outside</title>
@@ -337,6 +395,8 @@
 		<type>Hardcover</type>
 		<language>English</language>
 		<price>19.99</price>
+		<height> 0.5 </height>
+		<th_price> 300 </th_price>
 	</book>
 	<book category="Christian Books and Bibles">
 		<title lang="en">Youcat</title>
@@ -346,6 +406,8 @@
 		<type>Paperback</type>
 		<language>English</language>
 		<price>19.95</price>
+		<height> 0.5 </height>
+		<th_price> 300 </th_price>
 	</book>
 	<book category="Literature and Fiction">
 		<title lang="en">The Nest</title>
@@ -364,6 +426,8 @@
 		<type>Paperback</type>
 		<language>English</language>
 		<price>22.99</price>
+		<height> 0.5 </height>
+		<th_price> 300 </th_price>
 	</book>
 	<book category="Home Improvement and Design">
 		<title lang="en">Mini Farming: Self-Sufficiency on 1/4 Acre</title>
@@ -374,6 +438,8 @@
 		<language>English</language>
     <filesize> 1435 KB </filesize>
 		<price>18.95</price>
+		<height> 0.5 </height>
+		<th_price> 300 </th_price>
 	</book>
 	<book category="sport">
 		<title lang="en">Stephen Curry: The Inspiring Story of One of Basketball's Sharpest Shooters</title>
@@ -383,6 +449,8 @@
 		<type> Paperback </type>
 		<language> English </language>
 		<price>9.64</price>
+		<height> 0.5 </height>
+		<th_price> 300 </th_price>
 	</book>
 	<book category="sport">
 		<title lang="en">The Flea - The Amazing Story of Leo Messi</title>
@@ -392,6 +460,8 @@
 		<type> Paperback </type>
 		<language> English </language>
 		<price>7.06</price>
+		<height> 0.8 </height>
+		<th_price> 300 </th_price>
 	</book>
 	<book category="sport">
 		<title lang="en">Shoe Dog: A Memoir by the Creator of Nike</title>
@@ -401,6 +471,8 @@
 		<type>Paperback</type>
 		<language>English</language>
 		<price>9.15</price>
+		<height> 0.5 </height>
+		<th_price> 300 </th_price>
 	</book>
 	<book category="sport">
 		<title lang="en">Strength Training Anatomy</title>
@@ -410,6 +482,9 @@
 		<type>Paperback</type>
 		<language>English</language>
 		<price>11.19</price>
+		<height> 0.6 </height>
+		<th_price> 350 </th_price>
+		
 	</book>
 	<book category="sport">
 		<title lang="en"> The Yoga Bible</title>
@@ -419,6 +494,8 @@
 		<type>Paperback</type>
 		<language>English</language>
 		<price>12.42</price>
+		<height> 0.6 </height>
+		<th_price> 350 </th_price>
 	</book>
 	<book category="sport">
 		<title lang="en"> Soccer IQ: Things That Smart Players Do</title>
@@ -428,6 +505,8 @@
 		<type>Paperback</type>
 		<language>English</language>
 		<price>9.99</price>
+		<height> 0.6 </height>
+		<th_price> 350 </th_price>
 	</book>
 	<book category="sport">
 		<title lang="en"> Principles of Athletic Training: A Competency-Based Approach</title>
@@ -446,6 +525,8 @@
 		<type>Paperback</type>
 		<language>English</language>
 		<price>12.95</price>
+		<height> 0.6 </height>
+		<th_price> 350 </th_price>
 	</book>
 	<book category="sport">
 		<title lang="en"> Open Andre Agassi</title>
@@ -455,6 +536,8 @@
 		<type>Paperback</type>
 		<language>English</language>
 		<price>11.80</price>
+		<height> 0.6 </height>
+		<th_price> 350 </th_price>
 	</book>
 	<book category="sport">
 		<title lang="en">I Think Therefore I Play Andrea Pirlo </title>
@@ -464,6 +547,8 @@
 		<type>Paperback</type>
 		<language>English</language>
 		<price>12.86</price>
+		<height> 0.6 </height>
+		<th_price> 350 </th_price>
 	</book>
 
 	<book category="computers-programming">
@@ -480,18 +565,22 @@
 		<author>Lynn Beighley</author>  
 		<publisher>O'Reilly Media, Inc.</publisher>
 		<publish_date>01-02-2007</publish_date>
-    <type>bond paper</type>
+    	<type>bond paper</type>
 		<language>English</language>
 		<price>55.52</price>
+		<height> 0.6 </height>
+		<th_price> 350 </th_price>
 	</book>
 	<book category="computers-programming">
 		<title lang="en">Java 5 Objects First</title>
 		<author>Barry I.Soroka</author>  
 		<publisher>Jones and Bartlett Publishers, LLC.</publisher>
 		<publish_date>01-01-2006	</publish_date>
-    <type>bond paper</type>
+    	<type>bond paper</type>
 		<language>English</language>
 		<price>30.02</price>
+		<height> 0.6 </height>
+		<th_price> 350 </th_price>
 	</book>
 	<book category="computers-programming">
 		<title lang="en">Simply Visual Basic. Net An Application-Driven Tutorial Approach +CD</title>	
@@ -501,43 +590,47 @@
     <type>bond paper</type>
 		<language>English</language>
 		<price>23.30</price>
-	</book>
+	<height>  0.7</height><th_price>100</th_price></book>
 	<book category="computers-programming">
 		<title lang="en">Open-Source Robotics and Process Control Cookbook: Designing and Building Robust, Dependable Real-Time Systems+CD</title>
 		<author>Lewin A.R.W. Edwards</author>  
 		<publisher>E.Q. Plus, สนพ.</publisher>
 		<publish_date>15-11-2005</publish_date>
-    <type>bond paper</type>
+   		<type>bond paper</type>
 		<language>English</language>
 		<price>47.57</price>
-	</book>
+	<height>  0.7</height><th_price>200</th_price></book>
 	<book category="computers-programming">
 		<title lang="en">Beginning HTML, XHTML, CSS, and JavaScript</title>
 		<author>Jon Duckett</author>  
 		<publisher>Wiley Publishing, Inc.</publisher>
 		<publish_date>18-12-2010</publish_date>
-    <type>bond paper</type>
+    	<type>bond paper</type>
 		<language>English</language>
 		<price>28.65</price>
+		<height> 0.6 </height>
+		<th_price> 350 </th_price>
 	</book>
 	<book category="computers-programming">
 		<title lang="en">Learning JQuery 3ED</title>
 		<author>Jonathan Chaffer</author>  
 		<publisher>Packt Publishing</publisher>
 		<publish_date>25-11-2011</publish_date>
-    <type>bond paper</type>
+    	<type>bond paper</type>
 		<language>English</language>
 		<price>64.16</price>
+		<height> 0.6 </height>
+		<th_price> 350 </th_price>
 	</book>
 	<book category="computers-hardware">
 		<title lang="en">Computer Organization and Architecture : Designing for Performance 9ED +Online Access</title>
 		<author>William Stallings</author>  
 		<publisher>Pearson Education Limited</publisher>
 		<publish_date>14-07-2013</publish_date>
-    <type>art paper</type>
+    	<type>art paper</type>
 		<language>English</language>
 		<price>29.88</price>
-	</book>
+	<height>0.9</height><th_price>300</th_price></book>
 	<book category="computers-internet">
 		<title lang="en">The Architecture of Computer Hardware, System Software, and Networking: An Information Technology Approach 4ED	</title>
 		<author>Irv Englander</author>  
@@ -546,7 +639,7 @@
     <type>bond paper</type>
 		<language>English</language>
 		<price>27.97</price>
-	</book>
+	<height>  0.5</height><th_price>200</th_price></book>
 	<book category="computers-entertainment">
 		<title lang="en">Media Studies : An Introduction</title>
 		<author>Robert Kolker</author>  
@@ -555,5 +648,5 @@
     <type>bond paper</type>
 		<language>English</language>
 		<price>46.47</price>
-	</book>
-<book category="ไทยทำ"><title lang="en">ลอง</title><author>หน่อย</author><publisher>ดิ</publisher><publish_date>อิ</publish_date><type>อิ</type><language/><price>$555</price></book><book category="AAAA"><title lang="en">sads</title><author>sdasa</author><publisher>dsdasd</publisher><publish_date>sdasdas</publish_date><type>Book</type><language/><price>12</price></book><book category="แต่ยัง"><title lang="en">สามารถ Add / Remove   ได้  ไม่ต้อง กราบ</title><author>ไม่สามารถ edit ได้</author><publisher>หกฟหก</publisher><publish_date>หฟกหก</publish_date><type>หฟกห</type><language/><price>45</price></book></bookstore>
+	<height>  0.6</height><th_price>100</th_price></book>
+<book category="Test"><title lang="en">test Add new Book</title><author>Nuttiwut</author><publisher>CPRE</publisher><publish_date>07-11-2559</publish_date><type>Book</type><language/><price>12</price><height>0.1</height><th_price>200</th_price></book><book category="Test" catagory="Test_2"><title lang="en">Add new 3 </title><author>Nuttiwut</author><publisher>Cpr.E</publisher><publish_date>07-11-2559</publish_date><type>Test</type><language/><price>12</price><height>0.3</height><th_price>2000</th_price></book><book category="Test"><title lang="en">Add new </title><author>Computer</author><publisher>CPRE</publisher><publish_date>09-11-2559</publish_date><type>asd</type><language/><price>2000</price><height>9</height><th_price>3000</th_price></book></bookstore>
